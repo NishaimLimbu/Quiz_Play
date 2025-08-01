@@ -1,11 +1,34 @@
-# Quiz_Play
-Contain python code for playing quiz.  Total 200 Questions with correct answer.
+# 🧠 Quiz Game
 
-# quiz_question_list.py 
-It is the .py file which is module created with the list of questions.
+A simple terminal-based quiz game built in Python that tests your knowledge across various topics!
 
-# Quiz.py
-It is the .py file with the main code. It don't uses external modules so no need to install any external module. 
+## 📂 Project Structure
 
-Simply run the program. It will ask you to enter number between (1-200). By entering any number between (1-200) you can answer those question. If you answer the question correctly than you can continue to play but if you don't answer correctly the program will ask you if you want to continue or not.
-If you type 'yes' than you can continue to play else not.
+Quiz_game/
+├── quize_question_list.py # Module containing 200 questions and answers
+├── Quiz.py # Main script to play the quiz
+└── README.md # Project documentation
+
+## 📜 Description
+
+This is a console-based quiz game where you can test your general knowledge in topics like:
+- Sports
+- General Knowledge
+- Chemistry
+- Physics
+- Scientists
+- Anime
+- Games
+... and more!
+
+### 📁 `quiz_question_list.py`
+- Contains a single function `Questions()`  
+- Returns a dictionary of **200** question-answer pairs  
+- Acts as the question bank module
+
+### ▶️ `quiz.py`
+- This is the **main game** file
+- Imports questions from `quiz_question_list.py`
+- Lets the user play the quiz interactively
+- Supports simple text input for answers
+- Checks correctness and shows the score
